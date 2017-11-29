@@ -10,7 +10,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
+<style>
+	.bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+</style>
 </head>
 <body>
 
@@ -25,11 +42,11 @@
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a ng-href="#!/item1" class="nav-link">Item 1</a>
+        <a ng-href="#!/item1" class="nav-link">Sport</a>
       </li>
       <li class="nav-item">
         
-        <a ng-href="#!/item2" class="nav-link">Item 2</a>
+        <a ng-href="#!/item2" class="nav-link">news</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -37,8 +54,8 @@
     </ul>
   </div>
 </nav>
-<div class="container" ng-view="">
-	hello
+<div class="container col-sm-12" ng-view="">
+	
 </div>
 </body>
 </html>

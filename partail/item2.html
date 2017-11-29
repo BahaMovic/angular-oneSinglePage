@@ -1,5 +1,13 @@
-<section>
 
-	{{text}}
-	
-</section>
+<div class="container-fluid bg-3 text-center"> 
+  <h3>news</h3>
+  <div class="row">
+    <div class="col-sm-4" ng-repeat="book in data">
+    	<img src="{{book.urlToImage}}" alt="Image" width="260px" height="150px">
+    	<h4>{{book.title}}</h4>
+      <p>book.description</p>
+      
+    </div>
+    
+  </div>
+</div>
